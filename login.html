@@ -1,0 +1,465 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="slideraish.css">
+
+    <!--font awsesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body id="body">
+
+    <div class="form" id="form" method="post">
+        <span class="borderLine"></span>
+        <div class="aish">
+            <h1 class="text">LOGIN</h1>
+            <div class="inputBox">
+
+                <input type="text" required="required" id="email" class="input" autocomplete="off">
+                <span class="text">Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+
+                <input type="password" required="required" id="password" class="input" autocomplete="off">
+                <span class="text">Password</span>
+                <i></i>
+            </div>
+            <div class="l">
+                <a href="forget.html" class="text link">Forgot Password?</a>
+            </div>
+            <input type="submit" value="login" id="login" class="sign text" onclick="myfun()" />
+
+
+
+        </div>
+
+    </div>
+    <div class="bar" id="bar">
+        <div class="d">
+            <!-- start of navbar -->
+            <nav class="navbar">
+                <img src="" alt="">
+                <ul class="navbar-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+                <div class="profile-dropdown">
+                    <div class="profile-dropdown-btn profile" onclick="toggle()">
+
+                        <span style="display: flex;" id="name">
+
+
+                        </span>
+                    </div>
+                    <ul class="profile-dropdown-list">
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="#" id="lemail">
+
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="#" id="lcourse">
+                                <i class="fa-regular fa-envelope"></i>
+                                INbox
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="#" id="lyear">
+                                <i class="fa-solid fa-chart-line"></i>
+                                analytics
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="#" id="username">
+                                <i class="fa-solid fa-sliders"></i>
+                                setting
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="#" class="out" id="out">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end of navbar  -->
+
+        </div>
+
+    </div>
+    <div class="demo-cont">
+        <!-- slider start -->
+        <div class="fnc-slider example-slider">
+            <div class="fnc-slider__slides">
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-green m--active-slide">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Cultural</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Event</span>
+                                </div>
+                            </h2>
+                            <button type="button" class="fnc-slide__action-btn">
+                                Credits
+                                <span data-text="Credits">Credits</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-dark">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Sports</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Event</span>
+                                </div>
+                            </h2>
+                            <button type="button" class="fnc-slide__action-btn">
+                                Credits
+                                <span data-text="Credits">Credits</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-red">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Coding</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Contest</span>
+                                </div>
+                            </h2>
+                            <button type="button" class="fnc-slide__action-btn">
+                                Credits
+                                <span data-text="Credits">Credits</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Literature</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Competition</span>
+                                </div>
+                            </h2>
+                            <button type="button" class="fnc-slide__action-btn">
+                                Credits
+                                <span data-text="Credits">Credits</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+            </div>
+            <nav class="fnc-nav">
+                <div class="fnc-nav__bgs">
+                    <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                    <div class="fnc-nav__bg m--navbg-dark"></div>
+                    <div class="fnc-nav__bg m--navbg-red"></div>
+                    <div class="fnc-nav__bg m--navbg-blue"></div>
+                </div>
+                <div class="fnc-nav__controls">
+                    <button class="fnc-nav__control">
+                        Cultural Event
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                    <button class="fnc-nav__control">
+                        Sports Event
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                    <button class="fnc-nav__control">
+                        Coding Contest
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                    <button class="fnc-nav__control">
+                        Literature Competition
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                </div>
+            </nav>
+
+        </div>
+        <!-- slider end -->
+        <div class="demo-cont__credits">
+            <div class="demo-cont__credits-close"></div>
+            <h2 class="demo-cont__credits-heading">Made by</h2>
+            <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt=""
+                class="demo-cont__credits-img" />
+            <h3 class="demo-cont__credits-name">Nikolay Talanov</h3>
+            <a href="https://codepen.io/suez/" target="blank" class="demo-cont_credits-link">My codepen</a>
+            <a href="https://twitter.com/NikolayTalanov" target="blank" class="demo-cont_credits-link">My twitter</a>
+            <h2 class="demo-cont__credits-heading">Based on</h2>
+            <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="blank"
+                class="demo-cont_credits-link">Concept by Kreativa Studio</a>
+            <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
+            <div class="colorful-switch">
+                <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending"
+                    id="colorful-switch-cb" />
+                <label class="colorful-switch__label" for="colorful-switch-cb">
+                    <span class="colorful-switch__bg"></span>
+                    <span class="colorful-switch__dot"></span>
+                    <span class="colorful-switch__on">
+                        <span class="colorful-switch_on_inner"></span>
+                    </span>
+                    <span class="colorful-switch__off"></span>
+                </label>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="features" id="vikas">
+        <img src="images/Tanisha.jpg" data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
+        <div class="features__feature">
+            <div class="features__icon">
+
+            </div>
+            <h5 class="features__header">100% digital bank</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+                sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+                debitis ducimus.
+            </p>
+            <button class="btn-features">Learn More</button>
+        </div>
+
+        <div class="features__feature">
+            <div class="features__icon">
+                <svg>
+                    <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                </svg>
+            </div>
+            <h5 class="features__header">Watch your money grow</h5>
+            <p>
+                Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+                inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+                quibusdam!
+            </p>
+            <button class="btn-features">Learn More</button>
+        </div>
+        <img src="images/Tanisha.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+
+        <img src="images/Tanisha.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
+        <div class="features__feature">
+            <div class="features__icon">
+                <svg>
+                    <use xlink:href="img/icons.svg#icon-credit-card"></use>
+                </svg>
+            </div>
+            <h5 class="features__header">Free debit card included</h5>
+            <p>
+                Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+                eveniet consequatur odit quam quos possimus assumenda dicta fuga
+                inventore ab.
+            </p>
+            <button class="btn-features">Learn More</button>
+        </div>
+        <div class="features__feature">
+            <div class="features__icon">
+                <svg>
+                    <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                </svg>
+            </div>
+            <h5 class="features__header">Watch your money grow</h5>
+            <p>
+                Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+                inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+                quibusdam!
+            </p>
+            <button class="btn-features">Learn More</button>
+        </div>
+        <img src="images/Tanisha.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+
+
+    </div>
+
+
+
+    <script src="slideraish.js"></script>
+
+    <script src="login.js"></script>
+    <script src="slideraish.js"></script>
+</body>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getDatabase, set, ref, child, get } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+    import { getAuth, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+
+
+        apiKey: "AIzaSyAtKTiYR3-AwfpwuAvBjNprDMJshAwHvvs",
+        authDomain: "smartmanager-d7e61.firebaseapp.com",
+        databaseURL: "https://smartmanager-d7e61-default-rtdb.firebaseio.com",
+        projectId: "smartmanager-d7e61",
+        storageBucket: "smartmanager-d7e61.appspot.com",
+        messagingSenderId: "958465975819",
+        appId: "1:958465975819:web:66ebb2601c3b5e1f0e890e",
+        measurementId: "G-T1TX0K01QG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+
+    login.addEventListener('click', (e) => {
+
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+
+        if (email.endsWith("@gla.ac.in") || email == "eventbeepgla@gmail.com") {
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+
+                    // Signed in 
+
+
+
+                    const user = userCredential.user;
+                    console.log(user);
+                    if (user.emailVerified) {
+                        console.log(user);
+                        alert("Succesfully login");
+                        const dbRef = ref(getDatabase());
+                        get(child(dbRef, `users/${user.uid}`)).then((snapshot) => {
+                            if (snapshot.exists()) {
+                                const a = snapshot.val();
+                                document.getElementById("name").innerHTML = a.fullname;
+                                document.getElementById("lemail").innerHTML = a.email;
+                                document.getElementById("lcourse").innerHTML = a.course;
+                                document.getElementById("lyear").innerHTML = a.year;
+                                document.getElementById("username").innerHTML = a.username;
+
+                                var bar = document.getElementById('bar');
+
+                                var fom = document.getElementById('form');
+                                fom.style.display = "none";
+                                bar.style.display = "block";
+                                var vikas = document.getElementById('vikas');
+                                vikas.style.display = "grid";
+                                body.style.justifycontent = "none";
+                                document.getElementById("body").style.display = "inline";
+                                document.getElementById("body").style.backgroundImage
+                                    = "none";
+
+
+
+
+
+                            } else {
+                                console.log("No data available");
+                            }
+                        }).catch((error) => {
+                            console.error(error);
+                        });
+
+
+                    }
+                    else {
+                        alert("First verify your Email")
+
+                    }
+
+
+
+
+
+
+
+
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(errorMessage);
+                });
+        }
+        else {
+            alert("Enter your gla id only")
+        }
+    })
+    out.addEventListener("click", (e) => {
+
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            alert("Signout succesfully");
+            var bar = document.getElementById('bar');
+            var fom = document.getElementById('form');
+            fom.style.display = "flex";
+            bar.style.display = "none";
+            document.getElementById('body').style.display = "flex";
+            document.getElementById('body').style.backgroundImage = "linear-gradient(to right,#380036, #0CBABA)";
+            var vikas = document.getElementById('vikas');
+            vikas.style.display = "none";
+
+
+
+        }).catch((error) => {
+            // An error happened.
+        });
+
+
+    });
+</script>
+
+</html>
